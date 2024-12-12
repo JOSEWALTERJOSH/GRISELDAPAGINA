@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Griselda Choque</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Feliz Cumpleaños Griselda Choque 🎉</h1>
+        <div class="image-container">
+            <img src="imagen1.jpg" alt="Imagen de cumpleaños" class="birthday-image">
+        </div>
+        <div class="phrase-container">
+            <p class="birthday-phrase">
+                ¡Feliz cumpleaños! Te deseo toda la felicidad que tú me has entregado en este tiempo.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Lista de imágenes
+        const images = ["imagen1.jpg", "imagen2.jpg", "imagen3.jpg", "imagen4.jpg", "imagen5.jpg", "imagen6.jpg", "imagen7.jpg"];
+        
+        // Lista de frases
+        const phrases = [
+            "¡Feliz cumpleaños! Te deseo toda la felicidad que tú me has entregado en este tiempo.",
+            "Puedes ser preciosa a los 30, encantadora a los 40 e irresistible el resto de tu vida. - Coco Chanel.",
+            "Feliz, feliz en tu día, amiguita. ¡Que tengas muchas alegrías hoy y siempre!",
+            "Eres la mejor persona del mundo, ¡feliz cumpleaños! Nunca dejes de brillar.",
+            "Que tengas un mal día y no recibas ninguna sorpresa. Que no, ¡que estoy de broma! Diviértete, ¡te lo mereces!",
+            "¿Sabes que nunca volverás a ser tan joven como hoy? Aprovecha la vida, ¡que son dos días!",
+            "Las arrugas son el recuerdo de muchas vivencias y experiencias. ¡Feliz cumpleaños y por muchas arrugas más!"
+        ];
+
+        // Seleccionar imagen y frase al azar
+        const randomIndex = Math.floor(Math.random() * images.length);
+        document.querySelector(".birthday-image").src = images[randomIndex];
+        document.querySelector(".birthday-phrase").textContent = phrases[randomIndex];
+    </script>
+</body>
+</html>
